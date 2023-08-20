@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN ./mvnw clean package
+RUN ./mvn clean package
 
 ENTRYPOINT ["java", "-jar", "target/hosting-0.0.1-SNAPSHOT.jar"]
